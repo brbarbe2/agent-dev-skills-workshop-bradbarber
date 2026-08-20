@@ -1,0 +1,268 @@
+{
+  "model": "gemini-3.5-flash",
+  "config": {
+    "http_options": {},
+    "system_instruction": "You are a weather agent designed to help a user get weather forcasts based on the city. Use the get_city_coordinates tool to     get the location of the city and use the get_nws_forcast tool to get the forcast\n\nYou are an agent. Your internal name is \"root_agent\". The description about you is \"Pat the friendly weather agent\".",
+    "tools": [
+      {
+        "function_declarations": [
+          {
+            "description": "Converts a city name or address into latitude and longitude coordinates using Google Maps.\n\nArgs:\n    city_name: The name of the city (e.g., 'Paris, France', 'Tokyo, Japan').\n\nReturns:\n    A dictionary containing latitude, longitude, and formatted address,\n    or an error message if not found.",
+            "name": "get_city_coordinates",
+            "parameters_json_schema": {
+              "properties": {
+                "city_name": {
+                  "title": "City Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "city_name"
+              ],
+              "title": "get_city_coordinatesParams",
+              "type": "object"
+            }
+          },
+          {
+            "description": "Fetches the latest National Weather Service (NWS) forecast for given latitude and longitude coordinates.\nOnly supports locations within the United States.\n\nArgs:\n    latitude: Latitude in decimal degrees (e.g., 38.8894).\n    longitude: Longitude in decimal degrees (e.g., -77.0352).\n\nReturns:\n    A dictionary containing the current and upcoming forecast periods, \n    or an error message if the location is outside US coverage or unreachable.",
+            "name": "get_nws_forecast",
+            "parameters_json_schema": {
+              "properties": {
+                "latitude": {
+                  "title": "Latitude",
+                  "type": "number"
+                },
+                "longitude": {
+                  "title": "Longitude",
+                  "type": "number"
+                }
+              },
+              "required": [
+                "latitude",
+                "longitude"
+              ],
+              "title": "get_nws_forecastParams",
+              "type": "object"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "contents": [
+    {
+      "parts": [
+        {
+          "text": "hi"
+        }
+      ],
+      "role": "user"
+    },
+    {
+      "parts": [
+        {
+          "text": "Hello! I'm Pat, your friendly weather agent. How can I help you today? If you'd like a weather forecast, just let me know which city you're interested in!",
+          "thought_signature": "Er4CCrsCARFNMg_O-z7fjO_323dGgql9Ht9QhepkZzsAfZfvgKTinjuM2qCVizqBSS5fLAfCz343R3VAdIi0NB1dYhbA6f5OSZ7YjqvH9wuB4hQtCS_9Ynev2IlsaxxL8S7iPJ22izc1RTFB0q0JV3_WSgLnvfamyPz0K6D_zgXY0AnmjvC4shIUU5QZ0pn2i3xWz1h8l_cjSH4i-aymLylkUiUPK9A4zdnNRoXIFMQ6VYoUD-Mp9ZqV-i5pqteDgQJfUFMkfWhtg7K1K6d4ZbUlrQAXV2h9Xt-h-PKTaBsEKG0JJCi02GfAQ1eieyf0002lpz8qni_-4PRm_50soSrnUvjP3s3lz-hMVf57DQZEhxxJB7Uw0QDLsMfjjn1QTDHWLqOeT-WBGl_fQ8m__kKCackPIT8aDcldEo_SsD2Q"
+        }
+      ],
+      "role": "model"
+    },
+    {
+      "parts": [
+        {
+          "text": "what's it like in Seattle?"
+        }
+      ],
+      "role": "user"
+    },
+    {
+      "parts": [
+        {
+          "function_call": {
+            "id": "call_1531457",
+            "args": {
+              "city_name": "Seattle"
+            },
+            "name": "get_city_coordinates"
+          },
+          "thought_signature": "Eo0DCooDARFNMg9Q3xCGasod8rkRtSPmxlGTA1dX-5y2ortADXlXPUOMb2655shMqdLiILaDFA7D1Ofka9y9Y6L0vlfMvhsm7_1LL7FuRJHbcVlPjW8glk6wllxlyTgHBdbC-inxP2W29xkoqdIyBoYePMadPNonsuZGWaZAwuOc7ylTXb1HzJnMG4GrSI6xK0r7GXzwJqkNKzFaW6ya6RdACPotKE5US06sxW5RjUwSH_cVpXDaGDbc6ZjNMOkzwnUmI15ZCJSyZVOFVLkt5ryTmUxSK-KboV-uudeqRLgvfnNG_5uilCshjbUDS__Ng-86QnyGlMc0PJohYG3iK56-HKdT5ZZC6kmrWIVeLE5M1BDJ9kvLGyEPVy3kM3PvYlA3hTFfGTJFn9-P_q_auNzjII_RX5bkdT9GK2_pAh0yZa741wiNdnvrr7k274yrYGW_7Xwj6dJyrqY1z7iqhsQXe37399vDBzwSLicIRLSx-xxrZND52PF8hSLOndzrWNSwmf58qDhFhiT_QoAvsA=="
+        }
+      ],
+      "role": "model"
+    },
+    {
+      "parts": [
+        {
+          "function_response": {
+            "id": "call_1531457",
+            "name": "get_city_coordinates",
+            "response": {
+              "city": "Seattle",
+              "formatted_address": "Seattle, WA, USA",
+              "latitude": 47.6061389,
+              "longitude": -122.3328481
+            }
+          }
+        }
+      ],
+      "role": "user"
+    },
+    {
+      "parts": [
+        {
+          "function_call": {
+            "id": "call_323937",
+            "args": {
+              "latitude": 47.6061389,
+              "longitude": -122.3328481
+            },
+            "name": "get_nws_forecast"
+          },
+          "thought_signature": "EoICCv8BARFNMg_ODkcvabnVl3AX5Os-lRzqH7cIscF-B8QKXLEd6b0cCxESPkuZCDypVG4604y4DpSGC-Tzbr7zllZxOXbMCqd1zqxeTufqkvU-9zfGctfX9xCeZwcbTJx64c4RVrex4_rKo7liIWOQnVmCQwYSZuQbCX8m-Q9KscAazTAGsmnUKTA_pjO8Y-S7gNZXK3uKg3TiOCbAx9x4Y94Std22v8UK0G3D-DNfijVgyqG_jpCbqo_JtHfDVAwcH_mfEB9XCn3VaGavgl9qRujlaZkCJtCCwjAE6yzTLGjrp8TCk_00_QSxeYRg22XWp3Ivb16hAjOF4_pF7fndGSPP"
+        }
+      ],
+      "role": "model"
+    },
+    {
+      "parts": [
+        {
+          "function_response": {
+            "id": "call_323937",
+            "name": "get_nws_forecast",
+            "response": {
+              "latitude": 47.6061389,
+              "longitude": -122.3328481,
+              "forecast": [
+                {
+                  "name": "Today",
+                  "temperature": "80°F",
+                  "wind": "1 to 6 mph NNW",
+                  "short_forecast": "Sunny",
+                  "detailed_forecast": "Sunny, with a high near 80. North northwest wind 1 to 6 mph."
+                },
+                {
+                  "name": "Tonight",
+                  "temperature": "60°F",
+                  "wind": "2 to 6 mph N",
+                  "short_forecast": "Mostly Clear",
+                  "detailed_forecast": "Mostly clear, with a low around 60. North wind 2 to 6 mph."
+                },
+                {
+                  "name": "Friday",
+                  "temperature": "80°F",
+                  "wind": "5 mph NNW",
+                  "short_forecast": "Mostly Cloudy",
+                  "detailed_forecast": "Mostly cloudy, with a high near 80. North northwest wind around 5 mph."
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "role": "user"
+    },
+    {
+      "parts": [
+        {
+          "text": "It's looking like a beautiful day in Seattle! Here is the forecast:\n\n*   **Today:** Sunny with a high near 80°F and light winds.\n*   **Tonight:** Mostly clear with a low around 60°F.\n*   **Friday:** Mostly cloudy, but still warm with a high near 80°F. \n\nEnjoy the nice weather! Let me know if you need any other forecasts.",
+          "thought_signature": "EqgDCqUDARFNMg8u-ESukFbK3GE5W7Qj-oB1D9lgBs8ltuaESr5xgayi6ck79eKgZBFbxelzpEqxXZ8_4CV3HDb3myFq0fGLeXeQTlu2JR0hcmsd1MlkuVCuDneOLF6Bl6ovsp2cAtFwl-258THP1CEFmbJIvEtbYXQC_O5fDs-UVcSYCIga9nFb6Zc3PqCKAyo9XdRwl3n32cSi2CIac4xM6H0HPJMmwG1uq2diLLtRCED5gLqzXM2RG3mpLU2Mmpz1jwZXFeRygvZC6VBUigQE5IxZcJdIh8eIHZAgqOg7OUdprqxbKCYNyw5APeI6xoyUaYshaLj64fGScrNEiqNgSAqk0J-F2aHGaKves-LsafEOO0hPINeUb45V2cuZwnOoe_2grv11xTDTdfvmLvC0e8d4nHejOCULCxRhKcSSYtuItTruFIwelKq92NYejr0cECZuUZak_5zcX9hGQ0HXlDOT4mTxkhUFhU1o1CNtL473oQ9sjzeAN1HWNQssnecDid2ENdb3b6R8RQiLFrO34xiSAFlT5pjiwsbca8IyjZg3vJAi0IIeBQ=="
+        }
+      ],
+      "role": "model"
+    },
+    {
+      "parts": [
+        {
+          "text": "how about denver?"
+        }
+      ],
+      "role": "user"
+    },
+    {
+      "parts": [
+        {
+          "function_call": {
+            "id": "call_2136019",
+            "args": {
+              "city_name": "Denver"
+            },
+            "name": "get_city_coordinates"
+          },
+          "thought_signature": "EokDCoYDARFNMg8xw9uUGSfIfkbeTlViM90tGHus5uKMSEkhVbdkyEKwJcR3-IVNd64q4y2TYgRsLAmR7kwMRV494FUrI14tk939N4CHmRRXQP0vxuER49iaRCFZP8tgiJKY_G-GqylirwnTujooP9fgyphOLJ4OdUjHG1jqH5cZ74gCk81PDAzePY0qNrwzvSx_fHmZTGgs3Np3jfFmyfS-ClsTenVc2A8v2VSt9V0ksxDP35a_BEs6xasNeet9ESUFMhfes-T4NhrVIa_Q4lc11X4V6rxkW95CSZy3f5a1rTt11bXjjU6L1iokfEJadIpeL4MOLlZ8ZzYfX5l3Ev5qgryo0WrdzR5q_MJdSBwO2Mia1EZt64V7CyZSz483RKlziTY49cC2Hgp_bNcI34tkLINZlWkIedOJC-HNhcG8bd0NEXqfLUBK9CuYyIL2FcpjPncvIAXmnkMMKchmPLqFdYcPsAvO4LcjzNWtaOZeGgcgsrLdvHiWHOdVv0B34DHarncweNFeWJDm"
+        }
+      ],
+      "role": "model"
+    },
+    {
+      "parts": [
+        {
+          "function_response": {
+            "id": "call_2136019",
+            "name": "get_city_coordinates",
+            "response": {
+              "city": "Denver",
+              "formatted_address": "Denver, CO, USA",
+              "latitude": 39.7392358,
+              "longitude": -104.990251
+            }
+          }
+        }
+      ],
+      "role": "user"
+    },
+    {
+      "parts": [
+        {
+          "function_call": {
+            "id": "call_1328379",
+            "args": {
+              "latitude": 39.7392358,
+              "longitude": -104.990251
+            },
+            "name": "get_nws_forecast"
+          },
+          "thought_signature": "EoACCv0BARFNMg_EQvgxdlBPLqhQALFQ4HhW9SaVUb1HEazaY_5IUORiR-y8xEyOAlS6qKPBjs0Q8BUL3atxo9Ng7q7ilhLFQBRWphxgqW8wgbspKIk5qkSMRiIqDNlkH1h6Yo8Xxfawqroum3n8LMavCFwOU1wN58gYM9wAQK6gbFPtXdJBQLFDTdcwUmnXvo_e4RqPg0claDaF9YVVWMGJP4WEGwB8Im60smB-s2q7R52DeSkSxw49dRIanDmHu61SPlmorS3e0uPNKAkJs1VwqZj4SNV0Kf6u3GzkEJYx98Ke8GZvjWp_7Ia6457Kch_psTVzYxmMUvm4eKspwH5ULQ=="
+        }
+      ],
+      "role": "model"
+    },
+    {
+      "parts": [
+        {
+          "function_response": {
+            "id": "call_1328379",
+            "name": "get_nws_forecast",
+            "response": {
+              "latitude": 39.7392358,
+              "longitude": -104.990251,
+              "forecast": [
+                {
+                  "name": "Today",
+                  "temperature": "94°F",
+                  "wind": "3 to 8 mph N",
+                  "short_forecast": "Sunny",
+                  "detailed_forecast": "Sunny, with a high near 94. North wind 3 to 8 mph."
+                },
+                {
+                  "name": "Tonight",
+                  "temperature": "65°F",
+                  "wind": "3 to 8 mph S",
+                  "short_forecast": "Mostly Clear",
+                  "detailed_forecast": "Mostly clear. Low around 65, with temperatures rising to around 67 overnight. South wind 3 to 8 mph."
+                },
+                {
+                  "name": "Friday",
+                  "temperature": "98°F",
+                  "wind": "3 to 9 mph ENE",
+                  "short_forecast": "Mostly Sunny",
+                  "detailed_forecast": "Mostly sunny. High near 98, with temperatures falling to around 96 in the afternoon. East northeast wind 3 to 9 mph."
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "role": "user"
+    }
+  ]
+}

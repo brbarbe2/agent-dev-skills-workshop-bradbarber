@@ -1,0 +1,115 @@
+__session_metadata__
+:
+displayName
+:
+"opening college football weekend"
+initial_summary
+:
+"The wait is almost over! The **2026 college football season** kicks off over two excitement-filled weekends. 
+
+The action begins on **Week 0 (Saturday, August 29)** and rolls into **Week 1** for the first full slate of matchups over **Labor Day weekend (September 3–7)**. 
+
+---
+
+### **Week 0: The Soft Opening (Saturday, August 29, 2026)**
+While Week 0 is relatively compact, it features high-profile international and conference matchups to ease fans back into the sport.
+
+*   **North Carolina vs. No. 23 TCU** (Dublin, Ireland) 
+    *   **Time/TV:** 12:00 PM ET on ESPN
+    *   **The Storyline:** The annual Aer Lingus College Football Classic returns to Aviva Stadium. This is an incredibly intriguing matchup as **Bill Belichick** enters his second year as head coach of the Tar Heels. 
+*   **NC State at Virginia** 
+    *   **Time/TV:** 3:30 PM ET on ESPN
+    *   **The Storyline:** Originally scheduled to be played in Rio de Janeiro, Brazil, this ACC conference opener was relocated to Scott Stadium in Charlottesville. Both teams are eager to establish early leverage in the ACC race.
+*   **Jacksonville State at North Dakota State** 
+    *   **Time/TV:** 5:30 PM ET on CBSSN
+    *   **The Storyline:** A highly anticipated game as 10-time FCS champions NDSU make their official debut as a newly minted FBS and Mountain West Conference program.
+*   **San Jose State at USC** (3:30 PM ET, NBC/Peacock)
+*   **Hawaii at Stanford** (Evening, ACC Network)
+*   **Memphis at UNLV** (10:00 PM ET, FOX)
+
+---
+
+### **Week 1: The Main Event (September 3 – September 7, 2026)**
+Week 1 is when college football returns in full force, taking over Labor Day weekend with major non-conference heavyweights and unique neutral-site clashes.
+
+#### **Thursday, September 3**
+*   **Colorado at Georgia Tech**
+    *   Deion Sanders and the Buffaloes look to wipe the slate clean after a tough end to their 2025 season. They'll travel to Atlanta to face a rising Georgia Tech squad.
+
+#### **Friday, September 4**
+*   **Miami at Stanford**
+    *   An early-season cross-country ACC clash. Duke transfer quarterback Darian Mensah takes the helm for the Hurricanes as they look to assert dominance early.
+
+#### **Saturday, September 5 (The First Full Saturday)**
+*   **Clemson at LSU**
+    *   **The Storyline:** Easily one of the most anticipated opening-week games. It marks the official debut of **Lane Kiffin** as the head coach of the LSU Tigers. It's a high-stakes rematch of last year's opener that will set a massive tone for both programs.
+*   **Baylor vs. Auburn** (3:30 PM ET on ABC)
+    *   The annual Aflac Kickoff Game takes center stage at Mercedes-Benz Stadium in Atlanta, Georgia.
+*   **North Texas at Indiana** (12:00 PM ET)
+    *   Defending national champion Indiana under Curt Cignetti begins their title defense. With former Heisman-winning quarterback Fernando Mendoza gone, transfer Josh Hoover (formerly of TCU) takes over the offense.
+*   **Ball State at No. 1 Ohio State** (12:30 PM ET on Big Ten Network)
+    *   The Buckeyes enter the season ranked No. 1 in the preseason AP Poll and get a tune-up game at Ohio Stadium before preparing for a monstrous Week 2 matchup at Texas.
+
+#### **Sunday, September 6**
+*   **Wisconsin vs. Notre Dame** (7:30 PM ET on NBC)
+    *   **The Storyline:** The iconic Shamrock Series takes over **Lambeau Field** in Green Bay, Wisconsin. This historical matchup is expected to have massive College Football Playoff implications right out of the gate. 
+*   **Louisville at Kentucky**
+    *   A rare and highly heated early-season edition of the Governor's Cup rivalry."
+review_comments
+:
+"*   **Louisville at Kentucky Matchup:** The Governor's Cup game between Louisville and Kentucky is not played on Sunday, September 6, 2026; it is scheduled for its traditional slot at the end of the season on Saturday, November 28, 2026. 
+    *   *Correction:* On Sunday, September 6, 2026, Louisville actually plays Ole Miss in the Music City Kickoff in Nashville, Tennessee, while Kentucky plays Youngstown State on Saturday, September 5, 2026."
+final_output
+:
+"The wait is almost over! The **2026 college football season** kicks off over two excitement-filled weekends. 
+
+The action begins on **Week 0 (Saturday, August 29)** and rolls into **Week 1** for the first full slate of matchups over **Labor Day weekend (September 3–7)**. 
+
+---
+
+### **Week 0: The Soft Opening (Saturday, August 29, 2026)**
+While Week 0 is relatively compact, it features high-profile international and conference matchups to ease fans back into the sport.
+
+*   **North Carolina vs. No. 23 TCU** (Dublin, Ireland) 
+    *   **Time/TV:** 12:00 PM ET on ESPN
+    *   **The Storyline:** The annual Aer Lingus College Football Classic returns to Aviva Stadium. This is an incredibly intriguing matchup as **Bill Belichick** enters his second year as head coach of the Tar Heels. 
+*   **NC State at Virginia** 
+    *   **Time/TV:** 3:30 PM ET on ESPN
+    *   **The Storyline:** Originally scheduled to be played in Rio de Janeiro, Brazil, this ACC conference opener was relocated to Scott Stadium in Charlottesville. Both teams are eager to establish early leverage in the ACC race.
+*   **Jacksonville State at North Dakota State** 
+    *   **Time/TV:** 5:30 PM ET on CBSSN
+    *   **The Storyline:** A highly anticipated game as 10-time FCS champions NDSU make their official debut as a newly minted FBS and Mountain West Conference program.
+*   **San Jose State at USC** (3:30 PM ET, NBC/Peacock)
+*   **Hawaii at Stanford** (Evening, ACC Network)
+*   **Memphis at UNLV** (10:00 PM ET, FOX)
+
+---
+
+### **Week 1: The Main Event (September 3 – September 7, 2026)**
+Week 1 is when college football returns in full force, taking over Labor Day weekend with major non-conference heavyweights and unique neutral-site clashes.
+
+#### **Thursday, September 3**
+*   **Colorado at Georgia Tech**
+    *   Deion Sanders and the Buffaloes look to wipe the slate clean after a tough end to their 2025 season. They'll travel to Atlanta to face a rising Georgia Tech squad.
+
+#### **Friday, September 4**
+*   **Miami at Stanford**
+    *   An early-season cross-country ACC clash. Duke transfer quarterback Darian Mensah takes the helm for the Hurricanes as they look to assert dominance early.
+
+#### **Saturday, September 5 (The First Full Saturday)**
+*   **Clemson at LSU**
+    *   **The Storyline:** Easily one of the most anticipated opening-week games. It marks the official debut of **Lane Kiffin** as the head coach of the LSU Tigers. It's a high-stakes rematch of last year's opener that will set a massive tone for both programs.
+*   **Baylor vs. Auburn** (3:30 PM ET on ABC)
+    *   The annual Aflac Kickoff Game takes center stage at Mercedes-Benz Stadium in Atlanta, Georgia.
+*   **North Texas at Indiana** (12:00 PM ET)
+    *   Defending national champion Indiana under Curt Cignetti begins their title defense. With former Heisman-winning quarterback Fernando Mendoza gone, transfer Josh Hoover (formerly of TCU) takes over the offense.
+*   **Ball State at No. 1 Ohio State** (12:30 PM ET on Big Ten Network)
+    *   The Buckeyes enter the season ranked No. 1 in the preseason AP Poll and get a tune-up game at Ohio Stadium before preparing for a monstrous Week 2 matchup at Texas.
+*   **Youngstown State at Kentucky**
+    *   The Wildcats open their campaign at home in Lexington, looking for a strong start to the 2026 season.
+
+#### **Sunday, September 6**
+*   **Wisconsin vs. Notre Dame** (7:30 PM ET on NBC)
+    *   **The Storyline:** The iconic Shamrock Series takes over **Lambeau Field** in Green Bay, Wisconsin. This historical matchup is expected to have massive College Football Playoff implications right out of the gate. 
+*   **Louisville vs. Ole Miss** (Nashville, TN)
+    *   **The Storyline:** A premier neutral-site showdown in the Music City Kickoff at Nissan Stadium. Both teams look to make an early-season statement in this highly anticipated SEC vs. ACC clash."
